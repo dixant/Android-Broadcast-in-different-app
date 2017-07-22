@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.colorbroadcastsender.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:stretchColumns="1">
+                <TableRow>
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="Red"/>
+                    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                        android:id="@+id/seekRed"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        app:dsb_min="0"
+                        app:dsb_max="255"
+                        app:dsb_progressColor="#f00"
+                        app:dsb_rippleColor="#f00"
+                        app:dsb_indicatorColor="#f00"
+                        />
+                   <!-- <TextView
+                        android:id="@+id/valueRed"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="0"/>-->
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="Green"/>
+                    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                        android:id="@+id/seekGreen"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        app:dsb_min="0"
+                        app:dsb_max="255"
+                        app:dsb_progressColor="#0f0"
+                        app:dsb_rippleColor="#0f0"
+                        app:dsb_indicatorColor="#0f0"/>
+                   <!-- <TextView
+                        android:id="@+id/valueGreen"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="0"/>-->
+                </TableRow>
+                <TableRow
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="Blue"/>
+                    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                        android:id="@+id/seekBlue"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        app:dsb_min="0"
+                        app:dsb_max="255"
+                        app:dsb_progressColor="#00f"
+                        app:dsb_rippleColor="#00f"
+                        app:dsb_indicatorColor="#00f"/>
+                   <!-- <TextView
+                        android:id="@+id/valueBlue"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:text="0"/>-->
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/setImg"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#c0000000"/>
+
+            <Button
+                android:id="@+id/buttonSetColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Color"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
